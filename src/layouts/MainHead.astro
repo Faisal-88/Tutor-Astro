@@ -1,0 +1,13 @@
+---
+const {title, description} = Astro.props;
+---
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- <title>{Astro.props.title}</title> mengarahkan title about yang di buat dipage, about membuat title disini (cara 1) -->
+    <title>{title}</title>  <!-- cara 2 untuk ubah title menggunakan props -->
+    <meta name="description" content= {description}/>
+</head>
