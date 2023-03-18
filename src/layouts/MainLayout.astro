@@ -1,0 +1,16 @@
+---
+//component import
+import MainHead from "./MainHead.astro";
+
+const {
+	title = "My Astro Blog",
+	description = "This My description",
+} = Astro.props; //title cara 2 menggunakan props
+---
+
+<html lang="en">
+    <MainHead {title} {description} /> <!-- memanggil semacam route title yang di buat dari props di MainHead.astro -->
+	<body>
+		<slot>Default Text</slot>
+	</body>
+</html>
