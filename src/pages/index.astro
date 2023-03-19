@@ -1,52 +1,8 @@
 ---
-//menggunakan object dan array
-const str = "faisal"
-const num = 1
-const obj = {
-	name : str,
-	number : num,
-	favorite: ["astro", "css", "hay"]
-}
-// menggunakan operator perbandingan ternary
-const isVisible = true; //!-- (true/false)--> or, &&, === dll
-
-const res = await fetch("https://jsonplaceholder.typicode.com/users?_limit=5");
-const data_api = await res.json(); //<!-- memasukkan/memanggil api dari url yang panggil ke data_api  -->//
+// component import
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<!-- ini array -->
-		<h1>{obj.favorite[1]}</h1>
-		{
-			isVisible //ini perbandingan
-		? <h1>{obj.favorite[0].toUpperCase()}</h1> //atau bisa seperti ini {obj.favorite[isvisible ? [0] : [1]].toUpperCase()}
-		: <h1>{obj.favorite[1].toUpperCase()}</h1>
-		}
-
-		<!-- penggunaan pengulangan for(map) diastro  -->
-		<ul>
-			{
-				obj.favorite.map(item => (
-					<li>{item}</li>
-				))
-			}
-		</ul>
-			<!-- panggil data api disini -->
-		<ul>
-			{
-				data_api.map(item => (
-					<li>{item.email}</li>
-				))
-			}
-		</ul>
-
-	</body>
-</html>
+<MainLayout title="My Home">
+	<p>ini component layout</p>
+</MainLayout>
