@@ -1,0 +1,16 @@
+---
+
+---
+<!-- membuat footer -->
+<footer>
+    <small>
+        Copyright &copy; <span id="copyright"></span>
+        | All rights reserved
+    </small>
+</footer>
+
+<script>
+    document.querySelector("#copyright").textContent = new Date() //manipulasi dengan dom js menggunakan id dibuat dan menambahkan date year/tahun
+    .getFullYear()
+    .toString();
+</script>

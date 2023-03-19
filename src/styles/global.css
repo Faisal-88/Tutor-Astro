@@ -235,7 +235,7 @@ small {
 }
 
 a,
-/* button {
+button {
   color: hsl(var(--txt));
   border-radius: var(--radius-sm);
   transition:
@@ -256,9 +256,9 @@ a,
       0 0 0 .2em hsl(var(--bkg)),
       0 0 0 .4em hsl(var(--accent));
   }
-} */
+}
 
-/* .link {
+.link {
   --type: transparent;
   --fill: transparent;
   display: flex;
@@ -315,7 +315,7 @@ a,
   &:hover {
     opacity: .8;
   }
-} */
+}
 
 
 ::selection {
@@ -338,10 +338,10 @@ a,
   background-color: hsl(var(--muted));
   box-shadow: var(--shadow-sm);
 
-  /* & ul {
+  & ul {
     display: flex;
     gap: var(--space-sm);
-  } */
+  }
 }
 
 .navbar {
@@ -375,25 +375,25 @@ a,
     background-color: hsl(var(--muted));
     box-shadow: var(--shadow-lg);
 
-    /* & div {
+    & div {
       display: grid;
       place-items: center;
       max-width: 1500px;
       margin-inline: auto;
-      gap: var(--space-sm); */
+      gap: var(--space-sm);
 
       @media --sm {
         display: flex;
         justify-content: space-between;
       }
 
-      /* & a {
+      & a {
         display: flex;
         align-items: center;
         gap: 5px;
         text-decoration: none;
       }
-    } */
+    }
   }
 
 /* about */
@@ -408,7 +408,7 @@ a,
     place-content: center;
   }
 
-  /* & img {
+  & img {
     border-radius: var(--radius-full);
     height: 400px;
     width: min(300px, 100%);
@@ -426,15 +426,15 @@ a,
     gap: var(--space-xs);
     max-width: var(--content-md);
   }
-} */
+}
 
 /* posts */
 
-/* .post-container {
+.post-container {
   margin-block: var(--space-md);
   display: grid;
   gap: var(--space-md);
-  align-items: start; */
+  align-items: start;
 
   @media --md {
     grid-template-columns: 1fr 1fr;
@@ -456,16 +456,16 @@ a,
   font-size: var(--fs-sm);
 
 
-  /* &:hover {
+  &:hover {
     color: hsl(var(--muted));
     opacity: 0.8;
-  } */
+  }
 
-  /* &:focus-visible {
+  &:focus-visible {
     box-shadow:
       0 0 0 .2em hsl(var(--bkg)),
       0 0 0 .4em hsl(var(--accent));
-  } */
+  }
 }
 
 /* cards */
@@ -476,7 +476,7 @@ a,
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
 
-  /* & .badge {
+  & .badge {
     --accent: var(--txt);
   }
 
@@ -498,10 +498,10 @@ a,
     display: grid;
     gap: var(--space-xs);
   }
-} */
+}
 
 /* posts */
-/* header {
+header {
   display: grid;
   place-items: center;
   gap: var(--space-sm);
@@ -514,9 +514,9 @@ a,
     text-align: center;
     margin-block: var(--space-lg) var(--space-sm);
   }
-} */
+}
 
-/* .post-content {
+.post-content {
   display: grid;
   justify-content: center;
   padding: var(--space-md);
@@ -528,25 +528,25 @@ a,
   & div {
     display: grid;
     gap: var(--space-sm);
-  } */
+  }
 
-  /* & .sidebar {
+  & .sidebar {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: var(--space-lg);
-    margin-block-start: var(--space-xl); */
+    margin-block-start: var(--space-xl);
 
     @media --md {
       margin:0;
     }
 
-    /* & aside {
+    & aside {
       display: grid;
       gap: var(--space-2xs);
-      padding: 0; */
+      padding: 0;
 
-      /* @media --sm {
+      @media --sm {
         flex: 1 1 40%;
       }
 
@@ -559,8 +559,8 @@ a,
         }
       }
     }
-  } */
-/* 
+  }
+
   @media --md {
     grid-template-columns: 1fr minmax(auto, 220px);
     gap: var(--space-lg);
@@ -570,20 +570,20 @@ a,
   @media --lg {
     grid-template-columns: 1fr minmax(auto, 300px);
   }
-} */
+}
 
 
-/* .hero-image {
+.hero-image {
   box-shadow: var(--shadow-md);
   object-fit: cover;
 
   @media --lg {
     border-radius: var(--radius-md);
   }
-} */
+}
 
 /* category cloud */
-/* .categories {
+.categories {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -592,20 +592,20 @@ a,
   justify-content: center;
   margin: 0;
 
-  /* & li {
+  & li {
     display: grid;
     place-items: center;
-  } */
-/* //<!-- } <-- */
+  }
+}
 
-/* [aria-label="Blog categories"], [aria-label="Related posts"] {
+[aria-label="Blog categories"], [aria-label="Related posts"] {
     padding: 0;
     text-align: center;
     display: grid;
     gap: var(--space-sm);
-    justify-items: center; */
+    justify-items: center;
 
-    /* & .post {
+    & .post {
       background-color: hsl(var(--muted));
       padding: var(--space-xs);
       gap: var(--space-2xs);
@@ -616,7 +616,7 @@ a,
       & a {
         text-decoration: none;
       }
-    } */
+    }
   }
 
 
